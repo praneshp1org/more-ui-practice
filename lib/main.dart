@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:online_class/pages/dashboard_one.dart';
 import 'package:online_class/pages/home_page.dart';
 import 'pages/home_page.dart';
 
@@ -17,9 +18,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.indigo,
       ),
-      home: HomePage(),
+      home: DashboardOne(),
     );
   }
 }
