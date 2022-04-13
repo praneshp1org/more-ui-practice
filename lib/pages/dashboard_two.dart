@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DashboardTwo extends StatefulWidget {
   const DashboardTwo({Key? key}) : super(key: key);
@@ -22,6 +23,9 @@ class _DashboardTwoState extends State<DashboardTwo> {
                 height: 200.0,
                 width: MediaQuery.of(context).size.width,
                 child: Carousel(
+                  indicatorBgPadding: 5,
+                  animationCurve: Curves.bounceInOut,
+                  animationDuration: Duration(seconds: 1),
                   images: [
                     NetworkImage(
                         "https://imgs.search.brave.com/AEPM6KQii4SJw4fsZfZCuRr4TQIkw2gYQLnYIUExVPg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9tZWRp/YS5ibG9ndG8uY29t/L2FydGljbGVzLzIw/MTgwNjI3LTIwNDgt/TWV6dTE4LmpwZz93/PTIwNDgmY21kPXJl/c2l6ZV90aGVuX2Ny/b3AmaGVpZ2h0PTEz/NjUmcXVhbGl0eT03/MA"),
@@ -37,6 +41,12 @@ class _DashboardTwoState extends State<DashboardTwo> {
                     )
                   ],
                 )),
+            ListTile(
+              title: Text(
+                "Best rated hotels",
+                style: GoogleFonts.getFont('Baloo Bhai'),
+              ),
+            ),
           ],
         ),
       ),
